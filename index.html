@@ -17,23 +17,93 @@
 <body class="text-poppins">
   <header>
   </header>
-  <main
-    class="min-h-screen bg-[#1E1E1E] bg-[url(images/background.png)] bg-no-repeat bg-center flex justify-center items-center flex-col">
-    <section class="home text-white">
-      <div class="flex flex-col gap-3 justify-center items-center ">
+  <main class=" min-h-screen bg-[#1E1E1E] bg-[url(images/background.png)] bg-no-repeat bg-center">
+
+    <!-- Home screen section -->
+    <section class="home text-white flex justify-center items-center flex-col">
+      <div class="flex flex-col gap-3 justify-center items-center hidden">
         <h1 class="text-anton uppercase text-8xl">Alphabet clash</h1>
         <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
         <button class="btn bg-white text-black">Play Now</button>
       </div>
     </section>
-    <section class="play-ground">
 
+    <!-- play ground  section-->
+    <section class="play-ground flex flex-col justify-center items-center gap-10 mt-20 hidden">
+      <!-- screen start  -->
+      <div
+        class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] bg-[#FFFFFFB3] rounded-[16px] flex flex-col justify-center items-center ">
+        <div class="text-white bg-[#2F2941] rounded-b-2xl p-2 w-1/2 text-center">
+          <p>Don't watch keyboard while playing...</p>
+        </div>
+        <div class="flex justify-center items-center w-full h-full">
+          <p class="text-black text-8xl font-extrabold ">Y</p>
+        </div>
+      </div>
+
+      <!-- keyboard start -->
+      <div>
+        <div class="flex justify-center gap-1 my-1 w-full">
+          <kbd class="kbd">q</kbd>
+          <kbd class="kbd">w</kbd>
+          <kbd class="kbd">e</kbd>
+          <kbd class="kbd">r</kbd>
+          <kbd class="kbd">t</kbd>
+          <kbd class="kbd">y</kbd>
+          <kbd class="kbd">u</kbd>
+          <kbd class="kbd">i</kbd>
+          <kbd class="kbd">o</kbd>
+          <kbd class="kbd">p</kbd>
+        </div>
+        <div class="flex justify-center gap-1 my-1 w-full">
+          <kbd class="kbd">a</kbd>
+          <kbd class="kbd">s</kbd>
+          <kbd class="kbd">d</kbd>
+          <kbd class="kbd">f</kbd>
+          <kbd class="kbd">g</kbd>
+          <kbd class="kbd">h</kbd>
+          <kbd class="kbd">j</kbd>
+          <kbd class="kbd">k</kbd>
+          <kbd class="kbd">l</kbd>
+        </div>
+        <div class="flex justify-center gap-1 my-1 w-full">
+          <kbd class="kbd">z</kbd>
+          <kbd class="kbd">x</kbd>
+          <kbd class="kbd">c</kbd>
+          <kbd class="kbd">v</kbd>
+          <kbd class="kbd">b</kbd>
+          <kbd class="kbd">n</kbd>
+          <kbd class="kbd">m</kbd>
+          <kbd class="kbd">/</kbd>
+        </div>
+      </div>
+      <!-- keyboard end here  -->
+
+      <!-- button start  here  -->
+      <div class="flex  justify-between w-3/4">
+        <button class="btn bg-purple-600 text-white rounded-full">
+          <span>Like</span>
+          <img src="images/heart.svg" alt="">
+          <span>1</span>
+        </button>
+        <button class="btn bg-[#360490] rounded-full text-white">
+          <span>Score</span>
+          <img src="images/dollar.svg" alt="">
+          <span>1</span>
+        </button>
+      </div>
     </section>
-    <section class="score">
 
+    <!-- score section start  -->
+    <section class="flex justify-center items-center min-h-screen border ]">
+      <div class="text-white bg-[#FFFFFF12]  w-[150px p-10 text-center space-y-3">
+        <p><span class="text-5xl font-extrabold">Score</span> <span class="text-5xl">:14</span></p>
+        <button class="btn">Play now</button>
+        <p>Practice will make you Pro</p>
+      </div>
     </section>
   </main>
-
+  <script src="script/script.js"></script>
 </body>
 
 </html>
