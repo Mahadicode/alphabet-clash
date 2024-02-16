@@ -14,6 +14,11 @@ function randomAlphabet() {
   const randomAlphabet = alphabet[index];
   return randomAlphabet;
 }
+function getElementTextById(elementId) {
+  const element = document.getElementById(elementId);
+  const text = element.innerText;
+  return text;
+}
 function getElementValueById(elementId) {
   const element = document.getElementById(elementId);
   const elementText = element.innerText;
