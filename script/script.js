@@ -1,7 +1,8 @@
 
 const audio = new Audio();
 let isGamePlayOn = false;
-const artbord = document.getElementById("art-board");
+const artBoard = document.getElementById("art-board");
+const modalBox = document.getElementById("modal");
 function handleEventlistenerKeyUp(event) {
   if (isGamePlayOn == false) return;
   const playerPres = event.key;
@@ -38,13 +39,13 @@ function handleEventlistenerKeyUp(event) {
     const life = getElementValueById('present-life');
     const updateLife = life - 1;
     const updateLifeColorPercentage = (updateLife * 100) / 10;
-    artbord.style.background = `linear-gradient(white ${updateLifeColorPercentage}%,red)`;
+    artBoard.style.background = `linear-gradient(white ${updateLifeColorPercentage}%,red)`;
     setElementValueById('present-life', updateLife);
     if (updateLife === 0) {
       gameOver()
         audio.src = ("../audio/game-over.mp3");
       audio.play();
-       artbord.style.background = `linear-gradient(white 100%,red)`;
+       artBoard.style.background = `linear-gradient(white 100%,red)`;
     }
   }
   
@@ -58,8 +59,6 @@ function continuePlay() {
   presentAlphabet.innerText = alphabet;
   setBackgroundColor(alphabet);
 }
-
-
 
 function play() {
   hideClass('home');
@@ -82,3 +81,15 @@ function gameOver() {
   removeBackgroundColor(element);
 
 }
+
+function modalOpen(event) {
+  if (event.clientY < 20) {
+    modalBox.style.display = 'flex';
+    console.log('amar')
+ }
+}
+function modalClose() {
+  modalBox.style.display = 'none';
+}
+
+document.body.onmousemove = modalOpen;

@@ -20,6 +20,14 @@
   <main class=" min-h-screen bg-[#1E1E1E] bg-[url(images/background.png)] bg-no-repeat bg-center">
 
     <!-- Home screen section -->
+    <!-- modal section  -->
+    <section id="modal" class="fixed w-full h-full  justify-center items-center ">
+      <div id="modal-box" class="w-1/3 bg-blue-800 border p-4 relative rounded-md">
+        <button id="X-button" onclick="modalClose()"
+          class="border text-white p-2 rounded-full bg-none absolute top-2 right-2">X</button>
+        <p class="text-white">Click to the X button or Escape</p>
+      </div>
+    </section>
     <section id="home" class=" text-white flex justify-center items-center flex-col min-h-screen  ">
       <div class="flex flex-col gap-3 justify-center items-center">
         <h1 class="text-anton uppercase text-8xl">Alphabet clash</h1>
@@ -27,6 +35,9 @@
         <button onclick="play()" class="btn bg-white text-black">Play Now</button>
       </div>
     </section>
+
+
+
 
     <!-- play ground  section-->
     <section id="play-ground" class=" flex flex-col justify-center items-center gap-10 pt-20 hidden">

@@ -6,3 +6,6 @@
 .text-anton{
   font-family: "Anton", sans-serif;
 }
+#modal{
+  display: none;
+}
